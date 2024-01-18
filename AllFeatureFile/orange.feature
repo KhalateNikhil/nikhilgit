@@ -7,3 +7,6 @@ Feature: Test Orange HRM Application
   Scenario: Validate Home Page Functionality
     Given user is on home page and validate home page title
     And user validate home page url
+
+  Scenario: validate home page logo
+    When user is on home page and validate home page logo

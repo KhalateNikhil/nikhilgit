@@ -5,6 +5,7 @@ import org.testng.Assert;
 import BaseLayer.BaseClass;
 import PageLayer.HomePage;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.When;
 
 public class HomePageSteps extends BaseClass{
 	private static HomePage homepage;
@@ -21,6 +22,12 @@ public void user_validate_home_page_url()
 {
 	Assert.assertTrue(homepage.validateHomePageUrl().contains("php"));
    
+}
+
+@When("user is on home page and validate home page logo")
+public void user_is_on_home_page_and_validate_home_page_logo() 
+{
+ homepage.validateHomePageLogo();  
 }
 
 }
