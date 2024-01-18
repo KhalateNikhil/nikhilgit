@@ -10,3 +10,7 @@ Feature: Test Orange HRM Application
 
   Scenario: validate home page logo
     When user is on home page and validate home page logo
+
+  Scenario: Validate PIM Page Functionality
+    When user click on pim page
+    And validate user is on pim page
